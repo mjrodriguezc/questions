@@ -1,0 +1,288 @@
+File config_haplotype_imputation.txt -pangenomeHaplotypeMethod GATK -readMethod GATK -localGVCFFolder inputDir/loadDB/gvcf/ -pangenomeDir outputDir/pangenome/ -endPlugin
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+/tassel-5-standalone/lib/ahocorasick-0.2.4.jar:/tassel-5-standalone/lib/biojava-alignment-6.0.4.jar:/tassel-5-standalone/lib/biojava-core-6.0.4.jar:/tassel-5-standalone/lib/biojava-genome-6.0.4.jar:/tassel-5-standalone/lib/biojava-phylo-4.2.12.jar:/tassel-5-standalone/lib/colt-1.2.0.jar:/tassel-5-standalone/lib/commons-codec-1.10.jar:/tassel-5-standalone/lib/commons-io-2.11.0.jar:/tassel-5-standalone/lib/commons-math3-3.4.1.jar:/tassel-5-standalone/lib/ejml-core-0.41.jar:/tassel-5-standalone/lib/ejml-ddense-0.41.jar:/tassel-5-standalone/lib/fastutil-8.2.2.jar:/tassel-5-standalone/lib/forester-1.039.jar:/tassel-5-standalone/lib/gs-core-1.3.jar:/tassel-5-standalone/lib/gs-ui-1.3.jar:/tassel-5-standalone/lib/guava-22.0.jar:/tassel-5-standalone/lib/htsjdk-2.24.1.jar:/tassel-5-standalone/lib/ini4j-0.5.4.jar:/tassel-5-standalone/lib/itextpdf-5.1.0.jar:/tassel-5-standalone/lib/jackson-annotations-2.13.2.jar:/tassel-5-standalone/lib/jackson-core-2.13.2.jar:/tassel-5-standalone/lib/jackson-databind-2.13.2.2.jar:/tassel-5-standalone/lib/jackson-module-kotlin-2.13.2.jar:/tassel-5-standalone/lib/javax.json-1.0.4.jar:/tassel-5-standalone/lib/jcommon-1.0.23.jar:/tassel-5-standalone/lib/jfreechart-1.0.19.jar:/tassel-5-standalone/lib/jfreesvg-3.2.jar:/tassel-5-standalone/lib/jhdf5-14.12.5.jar:/tassel-5-standalone/lib/json-simple-1.1.1.jar:/tassel-5-standalone/lib/junit-4.10.jar:/tassel-5-standalone/lib/kotlin-reflect-1.6.10.jar:/tassel-5-standalone/lib/kotlin-stdlib-1.6.10.jar:/tassel-5-standalone/lib/kotlin-stdlib-jdk7-1.6.10.jar:/tassel-5-standalone/lib/kotlin-stdlib-jdk8-1.6.10.jar:/tassel-5-standalone/lib/kotlinx-coroutines-core-jvm-1.6.0.jar:/tassel-5-standalone/lib/log4j-1.2.13.jar:/tassel-5-standalone/lib/mail-1.4.jar:/tassel-5-standalone/lib/phg.jar:/tassel-5-standalone/lib/postgresql-9.4-1201.jdbc41.jar:/tassel-5-standalone/lib/scala-library-2.10.1.jar:/tassel-5-standalone/lib/slf4j-api-1.7.10.jar:/tassel-5-standalone/lib/slf4j-simple-1.7.10.jar:/tassel-5-standalone/lib/snappy-java-1.1.8.4.jar:/tassel-5-standalone/lib/sqlite-jdbc-3.39.2.1.jar:/tassel-5-standalone/lib/sshj-0.32.0.jar:/tassel-5-standalone/lib/trove-3.0.3.jar:/tassel-5-standalone/sTASSEL.jar
+Memory Settings: -Xms512m -Xmx20G
+Tassel Pipeline Arguments: -debug -configParameters config.txt -ImputePipelinePlugin -imputeTarget diploidPath -inputType fastq -configFile config_haplotype_imputation.txt -pangenomeHaplotypeMethod GATK -readMethod GATK -localGVCFFolder inputDir/loadDB/gvcf/ -pangenomeDir outputDir/pangenome/ -endPlugin
+[main] INFO net.maizegenetics.plugindef.ParameterCache - load: loading parameter cache with: config.txt
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: password value: sqlite
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: liquibaseOutdir value: /phg/outputDir
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: keyFile value: /phg/key_file.txt
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: readMethod value: GATK
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: genomeData value: /phg/inputDir/reference/load_genome_data.txt
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: referenceFasta value: /phg/inputDir/reference/Milvus_V_primary_rename_Pldt-MT_CONTAMINATED.fa
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: outputDir value: /phg/outputDir
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: host value: 127.0.0.1
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: anchors value: /phg/test_interval.bed4
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: DBtype value: sqlite
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: refServerPath value: 127.0.0.1;/phg
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: fastqDir value: /phg/inputDir/imputation/test/
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: pathHaplotypeMethod value: GATK
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: DB value: /phg/phg_db_name.db
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: pathMethod value: GATK
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: configFile value: config.txt
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: pangenomeHaplotypeMethod value: GATK
+[main] INFO net.maizegenetics.plugindef.ParameterCache - ParameterCache: key: user value: sqlite
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Version: 5.2.88  Date: March 14, 2023
+[main] INFO net.maizegenetics.tassel.TasselLogging - Max Available Memory Reported by JVM: 19797 MB
+[main] INFO net.maizegenetics.tassel.TasselLogging - Java Version: 1.8.0_242
+[main] INFO net.maizegenetics.tassel.TasselLogging - OS: Linux
+[main] INFO net.maizegenetics.tassel.TasselLogging - Number of Processors: 1
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Citation: Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) TASSEL: Software for association mapping of complex traits in diverse samples. Bioinformatics 23:2633-2635.
+[main] INFO net.maizegenetics.tassel.TasselLogging -
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Using Library: Practical Haplotype Graph (PHG): Version: 1.4 Date: March 14, 2023
+[main] INFO net.maizegenetics.tassel.TasselLogging - PHG Citation: Bradbury PJ, Casstevens T, Jensen SE, Johnson LC, Miller ZR, Monier B, Romay MC, Song B, Buckler ES. The Practical Haplotype Graph, a platform for storing and using pangenomes for imputation. Bioinformatics. 2022 Aug 2;38(15):3698-3702. doi: 10.1093/bioinformatics/btac410. PMID: 35748708; PMCID: PMC9344836.
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Pipeline Arguments: [-fork1, -ImputePipelinePlugin, -imputeTarget, diploidPath, -inputType, fastq, -configFile, config_haplotype_imputation.txt, -pangenomeHaplotypeMethod, GATK, -readMethod, GATK, -localGVCFFolder, inputDir/loadDB/gvcf/, -pangenomeDir, outputDir/pangenome/, -endPlugin, -runfork1]
+net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin: time: Jun 2, 2023 10:22:43
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+ImputePipelinePlugin Parameters
+imputeTarget: diploidPath
+inputType: fastq
+configFile: config_haplotype_imputation.txt
+pangenomeHaplotypeMethod: GATK
+pathHaplotypeMethod: GATK
+pangenomeDir: outputDir/pangenome/
+pangenomeIndexName: null
+indexKmerLength: 21
+indexWindowSize: 11
+indexNumberBases: 90G
+minimapLocation: minimap2
+readMethod: GATK
+readMethodDescription: null
+outVcfFile: null
+forceDBUpdate: false
+liquibaseOutdir: /phg/outputDir
+skipLiquibaseCheck: false
+localGVCFFolder: inputDir/loadDB/gvcf/
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin - Checking if Liquibase can be run.
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.liquibase.CheckDBVersionPlugin: time: Jun 2, 2023 10:22:43
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+CheckDBVersionPlugin Parameters
+outputDir: /phg/outputDir
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.liquibase.CheckDBVersionPlugin - Deleting yesFile /phg/outputDir/run_yes.txt if it exists
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.liquibase.CheckDBVersionPlugin - Deleting noFile /phg/outputDirrun_no.txt if it exists
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - first connection: dbName from config file = /phg/phg_db_name.db host: 127.0.0.1 user: sqlite type: sqlite
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Database URL: jdbc:sqlite:/phg/phg_db_name.db
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Connected to database:
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.liquibase.CheckDBVersionPlugin - queueHaplotypeNodesByRange: query: select name FROM sqlite_master where type='table' and name='variants';
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.pangenome.liquibase.CheckDBVersionPlugin: time: Jun 2, 2023 10:22:44
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - net.maizegenetics.pangenome.liquibase.CheckDBVersionPlugin  Citation: Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) TASSEL: Software for association mapping of complex traits in diverse samples. Bioinformatics 23:2633-2635.
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.liquibase.LiquibaseUpdatePlugin: time: Jun 2, 2023 10:22:44
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+LiquibaseUpdatePlugin Parameters
+outputDir: /phg/outputDir
+command: status
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.liquibase.LiquibaseUpdatePlugin - Please wait, begin Command:liquibase --driver=org.sqlite.JDBC --url=jdbc:sqlite:/phg/phg_db_name.db --username=sqlite --password=sqlite --changeLogFile=changelogs/db.changelog-master.xml status --verbose
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.pangenome.liquibase.LiquibaseUpdatePlugin: time: Jun 2, 2023 10:22:49
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin - PHG DB is up to date.  Proceeding with Populating the PHG DB.
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.api.HaplotypeGraphBuilderPlugin: time: Jun 2, 2023 10:22:49
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+HaplotypeGraphBuilderPlugin Parameters
+configFile: config.txt
+methods: GATK
+includeSequences: true
+includeVariantContexts: false
+haplotypeIds: null
+chromosomes: null
+taxa: null
+localGVCFFolder: null
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - first connection: dbName from config file = /phg/phg_db_name.db host: 127.0.0.1 user: sqlite type: sqlite
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Database URL: jdbc:sqlite:/phg/phg_db_name.db
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Connected to database:
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - referenceRangesAsMap: query statement: select reference_ranges.ref_range_id, chrom, range_start, range_end, methods.name from reference_ranges  INNER JOIN ref_range_ref_range_method on ref_range_ref_range_method.ref_range_id=reference_ranges.ref_range_id  INNER JOIN methods on ref_range_ref_range_method.method_id = methods.method_id  AND methods.method_type = 7 ORDER BY reference_ranges.ref_range_id
+methods size: 1
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - referenceRangesAsMap: number of reference ranges: 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - referenceRangesAsMap: time: 0.070711112 secs.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - taxaListMap: query statement: SELECT gamete_haplotypes.gamete_grp_id, genotypes.line_name FROM gamete_haplotypes INNER JOIN gametes ON gamete_haplotypes.gameteid = gametes.gameteid INNER JOIN genotypes on gametes.genoid = genotypes.genoid ORDER BY gamete_haplotypes.gamete_grp_id;
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - taxaListMap: number of taxa lists: 5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - taxaListMap: time: 0.218162865 secs.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createHaplotypeNodes: haplotype method: GATK range group method: null
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createHaplotypeNodes: query statement: SELECT haplotypes_id, gamete_grp_id, haplotypes.ref_range_id, asm_contig, asm_start_coordinate, asm_end_coordinate, asm_strand, genome_file_id, sequence, seq_has...
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - CreateGraphUtils:addNodes - query=SELECT haplotypes_id, gamete_grp_id, haplotypes.ref_range_id, asm_contig, asm_start_coordinate, asm_end_coordinate, asm_strand, genome_file_id, sequence, seq_hash, seq_len FROM haplotypes WHERE method_id = 12;
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - addNodes: number of nodes: 36
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - addNodes: number of reference ranges: 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createHaplotypeNodes: time: 4.310863308 secs.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.HaplotypeGraph - Created graph edges: created when requested  number of nodes: 36  number of reference ranges: 9
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.pangenome.api.HaplotypeGraphBuilderPlugin: time: Jun 2, 2023 10:22:54
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.hapCalling.FastqToMappingPlugin: time: Jun 2, 2023 10:22:54
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+FastqToMappingPlugin Parameters
+minimap2IndexFile: outputDir/pangenome//pangenome_GATK_k21w11I90G.mmi
+keyFile: /phg/key_file.txt
+fastqDir: /phg/inputDir/imputation/test/
+maxRefRangeErr: 0.25
+lowMemMode: true
+maxSecondary: 20
+fParameter: f1000,5000
+minimapLocation: minimap2
+methodName: GATK
+methodDescription: null
+debugDir:
+outputSecondaryStats: false
+isTestMethod: false
+updateDB: true
+runWithoutGraph: false
+hapIdMapFile: null
+inputFastqFile:
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.hapCalling.Minimap2Utils - Running with graph a graph Object regardless of runWithoutGraph Parameter
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - first connection: dbName from config file = /phg/phg_db_name.db host: 127.0.0.1 user: sqlite type: sqlite
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Database URL: jdbc:sqlite:/phg/phg_db_name.db
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Connected to database:
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - PHGdbAccess - db is setup, init prepared statements, load hash table
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess -
+ beginning - isSqlite is true
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all geneotypes in genotype table=5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - refRangeRefRangeIDMap is null, creating new one with size : 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - loadAnchorHash: at end, size of refRangeRefRangeIDMap: 9, number of rs.next processed: 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all methods in method table=13
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all groups in taxa_groups table=0
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all groups in gamete_groups table=5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all gametes in gametes table=5
+[pool-1-thread-1] ERROR net.maizegenetics.pangenome.hapCalling.Minimap2Utils - input directory does not contain both of inputDir/imputation/test/4443XM090_output_forward_paired.fq.gz and inputDir/imputation/test/4443XM090_output_reverse_paired.fq.gz. The directory name should not be part of the filename in the keyfile.
+[pool-1-thread-1] ERROR net.maizegenetics.pangenome.hapCalling.Minimap2Utils - input directory does not contain both of inputDir/imputation/test/4443XM091_output_forward_paired.fq.gz and inputDir/imputation/test/4443XM091_output_reverse_paired.fq.gz. The directory name should not be part of the filename in the keyfile.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - putHaplotypeListData - at end, haplotypeListId = 1
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.hapCalling.Minimap2Utils - runMinimapFromKeyFile: calling updateReadMappingHash()
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading readMappingHash, size of all read_mappings in read_mapping table=0
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.hapCalling.Minimap2Utils - runMinimapFromKeyFile, updateReadMappingHash took 0.00176759 seconds
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.hapCalling.Minimap2Utils - outputKeyFiles: calling updateReadMappingHash()
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading readMappingHash, size of all read_mappings in read_mapping table=0
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.hapCalling.Minimap2Utils - outputKeyFiles, updateReadMappingHash took 9.91361E-4 seconds
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - Closing DB
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.pangenome.hapCalling.FastqToMappingPlugin: time: Jun 2, 2023 10:22:55
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.api.HaplotypeGraphBuilderPlugin: time: Jun 2, 2023 10:22:55
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+HaplotypeGraphBuilderPlugin Parameters
+configFile: config.txt
+methods: GATK
+includeSequences: false
+includeVariantContexts: false
+haplotypeIds: null
+chromosomes: null
+taxa: null
+localGVCFFolder: null
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - first connection: dbName from config file = /phg/phg_db_name.db host: 127.0.0.1 user: sqlite type: sqlite
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Database URL: jdbc:sqlite:/phg/phg_db_name.db
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Connected to database:
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - referenceRangesAsMap: query statement: select reference_ranges.ref_range_id, chrom, range_start, range_end, methods.name from reference_ranges  INNER JOIN ref_range_ref_range_method on ref_range_ref_range_method.ref_range_id=reference_ranges.ref_range_id  INNER JOIN methods on ref_range_ref_range_method.method_id = methods.method_id  AND methods.method_type = 7 ORDER BY reference_ranges.ref_range_id
+methods size: 1
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - referenceRangesAsMap: number of reference ranges: 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - referenceRangesAsMap: time: 0.018893665 secs.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - taxaListMap: query statement: SELECT gamete_haplotypes.gamete_grp_id, genotypes.line_name FROM gamete_haplotypes INNER JOIN gametes ON gamete_haplotypes.gameteid = gametes.gameteid INNER JOIN genotypes on gametes.genoid = genotypes.genoid ORDER BY gamete_haplotypes.gamete_grp_id;
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - taxaListMap: number of taxa lists: 5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - taxaListMap: time: 0.006503536 secs.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createHaplotypeNodes: haplotype method: GATK range group method: null
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createHaplotypeNodes: query statement: SELECT haplotypes_id, gamete_grp_id, haplotypes.ref_range_id, asm_contig, asm_start_coordinate, asm_end_coordinate, asm_strand, genome_file_id, seq_hash, seq_len...
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - CreateGraphUtils:addNodes - query=SELECT haplotypes_id, gamete_grp_id, haplotypes.ref_range_id, asm_contig, asm_start_coordinate, asm_end_coordinate, asm_strand, genome_file_id, seq_hash, seq_len FROM haplotypes WHERE method_id = 12;
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - addNodes: number of nodes: 36
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - addNodes: number of reference ranges: 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createHaplotypeNodes: time: 3.666230245 secs.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.HaplotypeGraph - Created graph edges: created when requested  number of nodes: 36  number of reference ranges: 9
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.pangenome.api.HaplotypeGraphBuilderPlugin: time: Jun 2, 2023 10:22:59
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.pangenome.hapCalling.DiploidPathPlugin: time: Jun 2, 2023 10:22:59
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+DiploidPathPlugin Parameters
+keyFile: /phg/key_file_pathKeyFile.txt
+readMethod: GATK
+pathMethod: GATK
+pathMethodDescription: null
+minTaxa: 20
+probCorrect: 0.99
+minTransition: 0.001
+maxHap: 11
+minReads: 1
+removeEqual: false
+maxReadsKB: 1000
+splitNodes: false
+splitProb: 0.99
+numThreads: 3
+classicAlgorithm: false
+inbreedCoef: 0.0
+maxParents: 2147483647
+minCoverage: 1.0
+parentOutputFile: null
+isTestMethod: false
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - first connection: dbName from config file = /phg/phg_db_name.db host: 127.0.0.1 user: sqlite type: sqlite
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Database URL: jdbc:sqlite:/phg/phg_db_name.db
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.DBLoadingUtils - Connected to database:
+
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - PHGdbAccess - db is setup, init prepared statements, load hash table
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess -
+ beginning - isSqlite is true
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all geneotypes in genotype table=5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - refRangeRefRangeIDMap is null, creating new one with size : 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - loadAnchorHash: at end, size of refRangeRefRangeIDMap: 9, number of rs.next processed: 9
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all methods in method table=13
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all groups in taxa_groups table=0
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all groups in gamete_groups table=5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.db_loading.PHGdbAccess - before loading hash, size of all gametes in gametes table=5
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createEdges: creating edges from nodes.
+[pool-1-thread-1] INFO net.maizegenetics.pangenome.api.CreateGraphUtils - createEdges: time: 1.85886E-4 secs.
+[pool-1-thread-1] DEBUG net.maizegenetics.plugindef.AbstractPlugin - bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Random.java:388)
+	at net.maizegenetics.pangenome.api.HaplotypeGraph.verifyGraph(HaplotypeGraph.java:229)
+	at net.maizegenetics.pangenome.api.HaplotypeGraph.<init>(HaplotypeGraph.java:125)
+	at net.maizegenetics.pangenome.api.CreateGraphUtils.addMissingSequenceNodes(CreateGraphUtils.java:831)
+	at net.maizegenetics.pangenome.hapCalling.DiploidPathPlugin.processKeyfile(DiploidPathPlugin.kt:173)
+	at net.maizegenetics.pangenome.hapCalling.DiploidPathPlugin.processData(DiploidPathPlugin.kt:156)
+	at net.maizegenetics.plugindef.AbstractPlugin.performFunction(AbstractPlugin.java:111)
+	at net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin.findDiploidPaths(ImputePipelinePlugin.kt:326)
+	at net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin.runImputationPipeline(ImputePipelinePlugin.kt:281)
+	at net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin.processData(ImputePipelinePlugin.kt:150)
+	at net.maizegenetics.plugindef.AbstractPlugin.performFunction(AbstractPlugin.java:111)
+	at net.maizegenetics.plugindef.AbstractPlugin.dataSetReturned(AbstractPlugin.java:2017)
+	at net.maizegenetics.plugindef.ThreadedPluginListener.run(ThreadedPluginListener.java:29)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin -
+DiploidPathPlugin Description...
+DiploidPathPlugin finds the best path through all ordered pair of nodes in a HaplotypeGraph given a key file with sample names and read mapping ids.
+
+Usage:
+DiploidPathPlugin <options>
+-keyFile <Key File> : KeyFile file name.  Must be a tab separated file using the following headers:
+SampleName	ReadMappingIds	LikelyParents
+ReadMappingIds and LikelyParents need to be comma separated for multiple values (required)
+-readMethod <Read Mapping Method> : The name of the read mapping method in the PHG DB (required)
+-pathMethod <Path Method> : The name of the path method used to write the results to the PHG DB (required)
+-pathMethodDescription <Path Method Description> : An additional description that will be stored with the path method name, if desired.
+-minTaxa <Min Taxa> : minimum number of taxa per anchor reference range. Ranges with fewer taxa will not be included in the output node list. (Default: 20)
+-probCorrect <Probability Correct> : The probability that a read mapped to the correct haplotypes (Default: 0.99)
+-minTransition <Min Transition Probability> : The minimum transition probability between a pair of nodes in adjacent reference ranges. (Default: 0.001)
+-maxHap <Maximum Number of Haplotypes> : Any range with more than maxHap haplotypes will not be included in the path. (Default: 11)
+-minReads <Minimum Read Number> : Any range with fewer than minReads will not be included in the path. (Default: 1)
+-removeEqual <true | false> : Any range for which all haplotypes have the same number of read counts will not be included in the path. (Default: false)
+-maxReadsKB <Maximum Reads per KB> : Any range with more than maxReadsKB reads per kilobase of sequence will not be included in the path. (Default: 1000)
+-splitNodes <true | false> : If splitTaxa is true, then each taxon will be assigned its own node in the graph prior to path finding. (Default: false)
+-splitProb <Split Probability> : The transition probability for moving between nodes of the same taxon will be set to this number.  (Default: 0.99)
+-numThreads <Num Threads> : Number of threads used to find paths.  The path finding will subtract 2 from this number to have the number of worker threads.  It leaves 1 thread for IO to the DB and 1 thread for the Operating System. (Default: 3)
+-classicAlgorithm <true | false> : Use the classic algorithm to compute the Viterbi algorithm as described in Rabiner 1989. Significantly slower than the default algorithm. (Default: false)
+-inbreedCoef <Inbreed Coef> : The coefficient of inbreeding, f, for the taxa being imputed. (Default: 0.0)
+-maxParents <Max Parents> : To restrict path finding to the most likely parents, the number of parents used will not be greater than maxParents. The number of parents used will be the minimum of maxParents and the number of parents needed to reach minCoverage. If both maxParents and minCoverage are left at the default, all parents in the input HaplotypeGraph will be used. (Default: 2147483647)
+-minCoverage <Min Coverage> : To restrict path finding to the most likely parents, the smallest number of parents needed to provide read coverage greater than or equal to minCoverage will be used to find paths. If maxParents is smaller, that number of parents will be used. (Default: 1.0)
+-parentOutputFile <Parent Output File> : The name and path of the file of likely parents and their read counts. If no file name is provided the likely parents will not be written to a file.
+-isTestMethod <true | false> : Indication if the data is to be loaded against a test method. Data loaded with test methods are not cached with the PHG ktor server (Default: false)
+
+[pool-1-thread-1] ERROR net.maizegenetics.plugindef.AbstractPlugin - bound must be positive
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin: time: Jun 2, 2023 10:22:59
+[pool-1-thread-1] INFO net.maizegenetics.pipeline.TasselPipeline - net.maizegenetics.pangenome.pipeline.ImputePipelinePlugin: time: Jun 2, 2023 10:22:59: progress: 100%
